@@ -1,4 +1,4 @@
-![bird toys]( images/bird_original.jpg "Birdies!")
+![logo]( images/infocus_logo.svg "InFocus")
 
 # InFocus: Raising Awareness About ADHD and Making Effective Toys and Tools 
 
