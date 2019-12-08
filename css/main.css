@@ -268,7 +268,7 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 	width: 440px;
 }
 
-#content1 h2 
+#content1 h2, h3
 {
 	font-family: "DK Lemon Yellow Sun", DK Lemon Yellow Sun, Roboto, sans-serif;
 	font-size: 36px;
@@ -276,7 +276,7 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 	margin-left: 20px;
 }
 
-#content2 h2 
+#content2 h2, h3
 {
 	font-family: "DK Lemon Yellow Sun", DK Lemon Yellow Sun, Roboto, sans-serif;
 	font-size: 36px;
@@ -348,7 +348,7 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
   	justify-content: space-between;	
 }
 
-#promoImageBig
+#promoImageBig img
 {
 	width: 920px;
 }
@@ -356,13 +356,46 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 
 /*Page 4*/
 
+#contactHeading h2 {
+	display: flex;
+	font-size:36px;
+	align-items: center;
+	justify-content: center;
+	font-family: "DK Lemon Yellow Sun", DK Lemon Yellow Sun, Roboto, sans-serif;
+	color: #f8a350;
+}
+
 .productDescLargeLeft 
 {
 	width: 410px;
 }
 
+.productDescLargeLeft input, textarea {
+	width: 100%;
+	font-family: Roboto;
+	padding: 10px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+}
+
+.productDescLargeLeft input[type=submit] {
+	background-color: #f8a350;
+	border: none;
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+
 .productDescLargeRight 
 {
 	width: 410px;
+}
+
+.productDescLargeRight h3
+{
+	font-size: 36px;
+	text-align: right;
+	line-height: 10px;
 }
 
