@@ -1,4 +1,4 @@
-![logo]( images/infocus_logo.svg "InFocus")
+![logo]( /images/infocus_logo.svg "InFocus")
 
 # InFocus: Raising Awareness About ADHD and Making Effective Toys and Tools 
 
