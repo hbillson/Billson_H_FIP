@@ -4,11 +4,21 @@
 /*basic reset*/
 /*browsers have built in values for elements so we'll reset a few things to zero, you can add to this or remove items as needed*/
 
-div,p,body,header,footer,section,article,nav 
+@font-face {
+  font-family: "DK Lemon Yellow Sun", DK Lemon Yellow Sun, Roboto, sans-serif;
+  src: url(includes/dk_lemon.otf);
+}
+
+div,p,body,header,footer,section,article,nav
 { 
 	margin: 0; 
 	padding: 0; 
 }	
+
+li, ul {
+	margin-left: 20px; 
+	padding-left: 10px; 
+}
 
 img 
 { 
@@ -17,13 +27,18 @@ img
 	padding: 0; 
 }
 
+strong {
+	color:  #e8895b;
+}
 /*html selectors*/
 
 body 
 {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Roboto", Roboto, Arial, sans-serif;
 	font-size: 12px;
-	color: #333;
+	color: #838383;
+	background-color: #ebebeb;
+	line-height: 20px;
 }
 
 
@@ -38,11 +53,15 @@ a:link, a:visited
 
 a:hover, a:active 
 { 
-	text-decoration:none; 
+	text-decoration:none;
+	color: #f3dba1; 
 }
 
 /*hide elements from browser but show for doc outline*/
 
+ul { 
+		
+ }
 .hidden
 {
 	display: none;
@@ -51,7 +70,7 @@ a:hover, a:active
 /*section is block level and no width specidied therefore stretches full screen*/
 #topBar
 {
-	background-color: #000;
+	background-color: #f8a350;
 	height: 20px;
 }
 
@@ -65,6 +84,7 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 	width: 920px;
 	padding-left: 20px;
 	padding-right: 20px;
+	background-color: #ebebeb;
 }
 
 /*This is a flex container*/
@@ -86,10 +106,28 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 
 /*This is also a flex item*/
 /*We use margin left auto to send it all the way to the right*/
-#mainNav 
+#mainNav
 {
+	color:#f8a350;
+	font-size: 24px;
 	margin-left: auto;
 	width: 500px;
+	padding:5px;
+}
+
+#mainNav a
+{
+	color:#f8a350;
+}
+
+#mainNav a:hover, a:active
+{
+	color:#f9baae;
+}
+
+.navLine {
+	color:#f8a350;
+	font-size: 30px;
 }
 
 #promo 
@@ -102,13 +140,22 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
   	justify-content: flex-start;
 }
 
+#slogan
+
+{
+	color:#f8a350;
+	font-size: 24px;
+	padding-left:35px;
+	font-family: "DK Lemon Yellow Sun", DK Lemon Yellow Sun, Roboto, sans-serif;
+}
 
 #promoText 
 {
+	margin: 20px;
 	width: 600px;
 }
 
-#promoImage 
+#promoImage, img
 {
 	margin-left: auto;
 	width: 280px;
@@ -130,24 +177,63 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 	width: 200px;
 }
 
+.productDesc img
+{
+	width: 200px;
+}
+
+.productDesc a {
+	color: #e8895b;
+	font-size: 18px;
+	width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+
+.productDesc a:hover, a:active
+{
+	color:#f9baae;
+}
 #mainFooter 
 {
 	margin-top: 40px;
-	margin-bottom: 40px;
 	display: flex;
 	flex-direction: row;
   	justify-content: flex-start;
+  	background-color:#f8a350;
+  	padding-top: 30px;
+  	height: auto;
 }
 
-#footerNav 
+#footerNav
 {
-	width: 500px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+	width: 920px;
+	padding-left: 500px;
+	padding-right: 20px;
+	height: auto;
+	color: #ebebeb;
+}
+
+#footerNav a {
+	color: #ebebeb;
+}
+
+#footerNav a:hover, a:active
+{
+	color:#f9baae;
 }
 
 #copyRight 
 {
-	margin-left: auto;
+	margin-left: -200px;
 	width: 310px;
+	text-align: center;
+	color: #ebebeb;
 }
 
 /*Page 2 - Notice we are using one style sheet for all of the pages*/
@@ -166,10 +252,45 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 	width: 440px;
 }
 
+#content1 img
+{
+	width: 440px;
+}
+
 #content2 
 {
 	margin-left: auto;
 	width: 440px;
+}
+
+#content2 img
+{
+	width: 440px;
+}
+
+#content1 h2 
+{
+	font-family: "DK Lemon Yellow Sun", DK Lemon Yellow Sun, Roboto, sans-serif;
+	font-size: 36px;
+	color: #f8a350;
+	margin-left: 20px;
+}
+
+#content2 h2 
+{
+	font-family: "DK Lemon Yellow Sun", DK Lemon Yellow Sun, Roboto, sans-serif;
+	font-size: 36px;
+	color: #f8a350;
+	margin-left: 20px;
+}
+
+#content2 a 
+{
+	color: #f8a350;
+}
+#content2 a:hover 
+{
+	color: #f9baae;
 }
 
 /*Page 3*/
@@ -190,7 +311,9 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 	width: 280px;
 }
 
-
+.box {
+	width: 280px;
+}
 #contentAreaBig
 {
 	margin-top: 40px;
@@ -198,10 +321,31 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 	padding-bottom: 40px;
 }
 
-/*Get rid of this, here just to give different height*/
-#contentAreaBig p 
-{
-	line-height: 300px;
+#contentAreaBig h2, h3 {
+	font-family: "DK Lemon Yellow Sun", DK Lemon Yellow Sun, Roboto, sans-serif;
+	color: #f8a350;
+}
+
+#contentAreaBig h2 {
+	display: flex;
+	font-size:36px;
+	align-items: center;
+	justify-content: center;
+}
+
+#contentAreaBig h3 {
+	font-size:20px;
+}
+
+#contentAreaBig p {
+	padding-left:10px;
+}
+
+
+.contentBox {
+	display: flex;
+	flex-direction: row;
+  	justify-content: space-between;	
 }
 
 #promoImageBig
